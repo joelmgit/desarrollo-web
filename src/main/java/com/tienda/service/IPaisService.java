@@ -6,11 +6,13 @@ package com.tienda.service;
 
 import com.tienda.entity.Pais;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Joel Mora
  */
+@Service
 public interface IPaisService {
     public List<Pais> listCountry();
 }

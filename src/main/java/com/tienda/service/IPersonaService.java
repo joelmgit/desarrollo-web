@@ -6,11 +6,13 @@ package com.tienda.service;
 
 import com.tienda.entity.Persona;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Joel Mora
  */
+@Service
 public interface IPersonaService {
     public List<Persona> getAllPersona();
     public Persona getPersonaById(long id);
