@@ -36,7 +36,5 @@ public class WebConfig implements WebMvcConfigurer{
     @Override
     public void addInterceptors(InterceptorRegistry registro){
         registro.addInterceptor((localChangeInterceptor()));
-    }
-    
-    
+    }        
 }

@@ -31,6 +31,11 @@ public class PersonaService implements IPersonaService{
     }
 
     @Override
+    public Persona findByNombre(String nombre) {
+        return personaRepository.findByNombre(nombre);
+    }
+
+    @Override
     public void savePersona(Persona persona) {
         personaRepository.save(persona);
     }
@@ -39,5 +44,7 @@ public class PersonaService implements IPersonaService{
     public void delete(long id) {
         personaRepository.deleteById(id);
     }
+
+
      
 }
